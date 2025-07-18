@@ -113,8 +113,9 @@ figcaption {
 }
 
 .logo img {
+  margin-top: 20px;
   display: block;
-  max-height: 120px;
+  max-height: 60px;
 }
 
 
@@ -897,6 +898,70 @@ services
 }
 
 
+/* Footer Styles - Mostly Pink Theme */
+.site-footer {
+  background-color: #F8BBD0; /* Light pink background */
+  color: #333;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-box {
+  flex: 1 1 250px;
+  margin-bottom: 20px;
+}
+
+.footer-box h3,
+.footer-box h4 {
+  margin-bottom: 15px;
+  color: #D81B60; /* Medium pink for headings */
+}
+
+.footer-box p,
+.footer-box a,
+.footer-box ul li {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 8px;
+}
+
+.footer-box a:hover {
+  text-decoration: underline;
+  color: #D81B60;
+}
+
+.site-footer hr {
+  border-color: rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+  color: #555;
+}
+
+
+
 /*
 ---------------------------------------------
 our courses
@@ -982,16 +1047,29 @@ section.our-courses ul.nacc li {
 }
 
 section.our-courses ul.nacc li .left-image {
-  position: absolute;
-  margin-right: 50px;
-  top: 50%;
-  transform: translateY(-50%);
+  position: relative;
+  margin-right: 30px;
+  top: auto;
+  transform: none;
+  flex: 0 0 auto;
+  max-width: 300px;
 }
 
+section.our-courses ul.nacc li {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 0;
+}
+
+
 section.our-courses ul.nacc li .left-image img {
+  height: 100%;
+  object-fit: cover;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 }
+
 
 section.our-courses ul.nacc li .left-image .price h6 {
   position: absolute;
@@ -1011,8 +1089,15 @@ section.our-courses ul.nacc li .left-image .price h6 {
 }
 
 section.our-courses ul.nacc li .right-content {
-  padding: 40px 0px;
-  margin-left: 350px;
+  padding: 40px;
+  margin-left: 0;
+}
+
+/* Instead of applying flex to li, apply to the div inside */
+section.our-courses ul.nacc li > div {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
 }
 
 section.our-courses ul.nacc li .right-content h4 {
@@ -1229,7 +1314,6 @@ section.contact-us .contact-info {
 }
 
 section.contact-us .contact-info .icon i {
-  float: left;
   margin-right: 15px;
   width: 50px;
   height: 50px;
@@ -1302,7 +1386,6 @@ section.contact-us #contact textarea {
 }
 
 section.contact-us #contact button {
-  float: right;
   font-size: 13px;
   color: #fff;
   background: rgb(219, 138, 222);
