@@ -4,7 +4,7 @@
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo mt-0">
+            <a href="index.php #top" class="logo mt-0">
               <img src="assets/img/logo with name without bg.png" alt="Cambridge Logo">
             </a>
             <!-- ***** Logo End ***** -->
