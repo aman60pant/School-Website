@@ -9,7 +9,7 @@
   <meta name="author" content="">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-  <title>Cambridge International School</title>
+  <title>ABOUT | Cambridge International School</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,72 +33,78 @@ https://templatemo.com/tm-573-eduwell
 
 
   <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
+  <?php
+  include 'include/header.php'
+  ?>
+  <!-- ***** Header Area End ***** -->
+
+  <section class="page-heading">
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
-            <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo mt-0">
-              <img src="assets/img/logo with name without bg.png" alt="Cambridge Logo">
-            </a>
-            <!-- ***** Logo End ***** -->
-            <!-- ***** Menu Start ***** -->
-            <ul class="nav">
-              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#services">Services</a></li>
-              <li class="scroll-to-section"><a href="#courses">Courses</a></li>
-              <li class="has-sub">
-                <a href="javascript:void(0)">Pages</a>
-                <ul class="sub-menu">
-                  <li><a href="about-us.html">About Us</a></li>
-                  <li><a href="our-services.html">Our Services</a></li>
-                  <li><a href="contact-us.html">Contact Us</a></li>
-                </ul>
-              </li>
-              <li class="scroll-to-section"><a href="#testimonials">Testimonials</a></li>
-              <li class="scroll-to-section"><a href="#contact-section">Contact Us</a></li>
-            </ul>
-            <a class='menu-trigger'>
-              <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
-          </nav>
+        <div class="col-lg-12">
+          <div class="header-text">
+            <h4>More About Us</h4>
+            <h1>About Us</h1>
+          </div>
         </div>
       </div>
     </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
+  </section>
 
-  <!-- ***** Main Banner Area Start ***** -->
-  <section class="main-banner" id="top">
+  <section class="get-info">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 align-self-center">
-          <div class="header-text">
-            <h6>Welcome to our school</h6>
-            <h2>A school where <em>learning</em> comes first.</h2>
-            <div class="main-button-gradient">
-              <div class="scroll-to-section"><a href="#contact-section">Join Us Now!</a></div>
-            </div>
-          </div>
-        </div>
         <div class="col-lg-6">
-          <div class="owl-carousel banner-carousel">
-            <div class="item" style="height: 300px;"><img src="assets/img/Banners/img1.jpg" alt="Slide 1"></div>
-            <div class="item" style="height: 300px;"><img src="assets/img/Banners/img2.jpg" alt="Slide 2"></div>
-            <div class="item" style="height: 300px;"><img src="assets/img/Banners/img3.jpg" alt="Slide 3"></div>
-            <div class="item" style="height: 300px;"><img src="assets/img/Banners/img4.jpg" alt="Slide 4"></div>
-            <div class="item" style="height: 300px;"><img src="assets/img/Banners/img5.jpg" alt="Slide 5"></div>
-            <div class="item" style="height: 300px;"><img src="assets/img/Banners/img6.jpg" alt="Slide 6"></div>
-            <div class="item" style="height: 300px;"><img src="assets/img/Banners/img7.jpg" alt="Slide 7"></div>
-            <div class="item" style="height: 300px;"><img src="assets/img/Banners/img8.jpg" alt="Slide 8"></div>
-            <div class="item" style="height: 300px;"><img src="assets/img/Banners/img9.jpg" alt="Slide 9"></div>
+          <div class="left-image">
+            <img src="assets/images/about-left-image.png" alt="">
+          </div>
+
+        </div>
+        <div class="col-lg-6 align-self-center">
+          <div class="section-heading">
+            <h6>Get info</h6>
+            <h4>Read More <em>About Us</em></h4>
+            <p>Cambridge International School's buildings and grounds are located at Shahpur Bus Stand, Talheri Buzurg, Saharanpur. Cambridge International School is from playground to C.B.S.E.(Class X). Cambridge International School is located in extremely quiet, open and healthy surroundings.<br><br>It is away from the hustle and bustle of the town. The School Campus is naturally landscaped and lush green with special care taken to create an atmosphere conductive for a child.<br><br>We also provide stress free & a congenial learning environment further enriching their personalities to become future torch bearers. Many passout students today hold/adorn key/vital positions in various organizations. Their utmost sincerity, self dedication ,empathic & humane attitude of our students reflect their Alma-mater. We are proud of them.</p>
           </div>
         </div>
       </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="info-item">
+              <div class="icon">
+                <img src="assets/images/service-icon-01.png" alt="">
+              </div>
+              <h4>Aims</h4>
+              <ul>
+                <li>The School aims at a sound basis of education along modern lines and the programme of instruction isdesigned to produce a sense of vocational and spirit of service to the country.</li>
+                <br>
+                <li>Care is taken to develop integrity of character, initiative and courtesy.</li>
+                <br>
+                <li>Moral instructions is impart to all pupils, the object being to make them worthy citizen of India.</li>
+                <br>
+                <li>Stress is laid on the preference of quality over quantity over quantity in learning.</li>
+              </ul>
+
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="info-item">
+              <div class="icon">
+                <img src="assets/images/service-icon-02.png" alt="">
+              </div>
+              <h4>Vision & Mission</h4>
+              <ul>
+                <li>Be amongst the most admired centers of education to foster academic excellence, physical fitness, psychological and spiritual health and social consciousness , committed to helping students leapfrog into the 21st century as independently thinking individuals imbibing traits of initiative and leadership to enable them to become world citizens.</li>
+                <br>
+                <li>Encourage students to develop sound ethical values and exposing them to modern and technologically driven environment thereby strengthening our rich heritage and developing human potential towards the betterment of the society.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-  <!-- ***** Main Banner Area End ***** -->
 
   <section class="services" id="services">
     <div class="container">
@@ -237,84 +243,8 @@ https://templatemo.com/tm-573-eduwell
     </div>
   </section>
 
-  <!-- Sets Apart Start  -->
-  <section class="our-courses" id="courses">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading">
-            <h4>What Sets Us <em>Apart?</em></h4>
-            <p>A future-ready curriculum, dedicated faculty, and personalized attention make our school a place where
-              every child thrives — academically and emotionally.</p>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="naccs">
-            <div class="tabs">
-              <div class="row">
-                <!-- Tabs Menu -->
-                <div class="col-lg-3">
-                  <div class="menu">
-                    <div class="active gradient-border"><span>Learner-Centered</span></div>
-                    <div class="gradient-border"><span>Active Learning</span></div>
-                    <div class="gradient-border"><span>Flexible & Accelerated Pacing</span></div>
-                  </div>
-                </div>
 
-                <!-- Tabs Content -->
-                <div class="col-lg-9">
-                  <ul class="nacc">
-                    <!-- Tab 1 -->
-                    <li class="active">
-                      <div>
-                        <div class="left-image">
-                          <img src="assets/img/SA1.jpg" alt="">
-                        </div>
-                        <div class="right-content">
-                          <h4>Learner-Centered</h4>
-                          <p>Students are encouraged to take charge of their own learning in a supportive environment
-                            that fosters independence, critical thinking, and self-motivation.</p>
-                        </div>
-                      </div>
-                    </li>
 
-                    <!-- Tab 2 -->
-                    <li>
-                      <div>
-                        <div class="left-image">
-                          <img src="assets/img/SA2.png" alt="">
-                        </div>
-                        <div class="right-content">
-                          <h4>Active Learning</h4>
-                          <p>Our approach emphasizes collaboration, creativity, and real-world problem-solving, ensuring
-                            learning is engaging, meaningful, and memorable.</p>
-                        </div>
-                      </div>
-                    </li>
-
-                    <!-- Tab 3 -->
-                    <li>
-                      <div>
-                        <div class="left-image">
-                          <img src="assets/img/SA3.jpg" style="" alt="">
-                        </div>
-                        <div class="right-content">
-                          <h4>Flexible & Accelerated Pacing</h4>
-                          <p>Students progress based on mastery rather than seat time, often advancing beyond
-                            traditional grade levels and exploring advanced subjects early on.</p>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Sets apart end  -->
   <section class="testimonials" id="testimonials">
     <div class="container">
       <div class="row">
@@ -387,125 +317,9 @@ https://templatemo.com/tm-573-eduwell
       </div>
     </div>
   </section>
-
-  <section class="contact-us" id="contact-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <div id="map">
-
-            <!-- You just need to go to Google Maps for your own map point, and copy the embed code from Share -> Embed a map section -->
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221531.50818748033!2d77.50573871974416!3d29.823012934490123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ea43955555557%3A0xa91c649ce434da27!2sCambridge%20International%20School!5e0!3m2!1sen!2sin!4v1752831001378!5m2!1sen!2sin"
-              width="100%" height="420px" frameborder="0"
-              style="border:0; border-radius: 15px; position: relative; z-index: 2;" allowfullscreen=""></iframe>
-            <div class="row">
-              <div class="col-lg-4 offset-lg-1">
-                <div class="contact-info">
-                  <div class="icon">
-                    <i class="fa fa-phone"></i>
-                  </div>
-                  <h4>Phone</h4>
-                  <span>010-020-0340</span>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="contact-info">
-                  <div class="icon">
-                    <i class="fa fa-phone"></i>
-                  </div>
-                  <h4>Mobile</h4>
-                  <span>090-080-0760</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <form id="contact" action="" method="post">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="section-heading">
-                  <h6>Contact us</h6>
-                  <h4>Say <em>Hello</em></h4>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <input type="name" name="name" id="name" placeholder="Full Name" autocomplete="on" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email"
-                    required="">
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <textarea name="message" id="message" placeholder="Your Message"></textarea>
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <button type="submit" id="form-submit" class="main-gradient-button">Send Message</button>
-                </fieldset>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="col-lg-12">
-          <ul class="social-icons">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-<!-- Footer Section -->
-<footer class="site-footer">
-  <div class="footer-container">
-    
-    <!-- About -->
-    <div class="footer-box">
-      <h3>Cambridge International School</h3>
-      <p>Empowering students with knowledge, discipline, and values since 1995.</p>
-    </div>
-
-    <!-- Quick Links -->
-    <div class="footer-box">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Testimonials</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-
-    <!-- Contact Info -->
-    <div class="footer-box">
-      <h4>Contact Us</h4>
-      <p><strong>Address:</strong> Shahpur Bus Stand, Talheri Buzurg, Saharanpur</p>
-      <p><strong>Phone:</strong> +91 9876543210</p>
-      <p><strong>Email:</strong> info@cambridgeschool.com</p>
-    </div>
-    
-  </div>
-
-  <hr>
-  <p class="footer-bottom">&copy; 2025 Cambridge International School. All rights reserved.</p>
-</footer>
-
-
-
-
+  <?php
+  include 'include/footer.php'
+  ?>
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -530,8 +344,8 @@ https://templatemo.com/tm-573-eduwell
 
       if (isAnimate) {
         $('body, html').animate({
-          scrollTop: reqSectionPos
-        },
+            scrollTop: reqSectionPos
+          },
           800);
       } else {
         $('body, html').scrollTop(reqSectionPos);
@@ -540,7 +354,7 @@ https://templatemo.com/tm-573-eduwell
     };
 
     var checkSection = function checkSection() {
-      $('.section').each(function () {
+      $('.section').each(function() {
         var
           $this = $(this),
           topEdge = $this.offset().top - 80,
@@ -551,20 +365,21 @@ https://templatemo.com/tm-573-eduwell
             currentId = $this.data('section'),
             reqLink = $('a').filter('[href*=\\#' + currentId + ']');
           reqLink.closest('li').addClass('active').
-            siblings().removeClass('active');
+          siblings().removeClass('active');
         }
       });
     };
 
-    $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+    $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function(e) {
       e.preventDefault();
       showSection($(this).attr('href'), true);
     });
 
-    $(window).scroll(function () {
+    $(window).scroll(function() {
       checkSection();
     });
   </script>
+
 </body>
 
 </html>
