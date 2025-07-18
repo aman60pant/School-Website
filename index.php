@@ -21,11 +21,7 @@
   <link rel="stylesheet" href="assets/css/owl.css">
   <link rel="stylesheet" href="assets/css/lightbox.css">
   <!--
-
-TemplateMo 573 EduWell
-
-https://templatemo.com/tm-573-eduwell
-
+    Website- https://cambridgeinternationalschool.edu.in/
 -->
 </head>
 
