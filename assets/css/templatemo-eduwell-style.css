@@ -29,15 +29,70 @@ font & reset css
 --------------------------------------------- 
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900");
+
 /* 
 ---------------------------------------------
 reset
 --------------------------------------------- 
 */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
-pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
-s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
-figure, header, nav, section, article, aside, footer, figcaption {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+div pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+figure,
+header,
+nav,
+section,
+article,
+aside,
+footer,
+figcaption {
   margin: 0;
   padding: 0;
   border: 0;
@@ -53,6 +108,16 @@ figure, header, nav, section, article, aside, footer, figcaption {
   height: 0;
 }
 
+.logo {
+  display: inline-block;
+}
+
+.logo img {
+  display: block;
+  max-height: 120px;
+}
+
+
 .clearfix {
   display: inline-block;
 }
@@ -65,13 +130,20 @@ html[xmlns] .clearfix {
   height: 1%;
 }
 
-ul, li {
+ul,
+li {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-header, nav, section, article, aside, footer, hgroup {
+header,
+nav,
+section,
+article,
+aside,
+footer,
+hgroup {
   display: block;
 }
 
@@ -79,7 +151,8 @@ header, nav, section, article, aside, footer, hgroup {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   background-color: #fff;
@@ -93,7 +166,12 @@ a {
   text-decoration: none !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -135,16 +213,21 @@ body {
 }
 
 @media (max-width: 991px) {
-  html, body {
+
+  html,
+  body {
     overflow-x: hidden;
   }
+
   .mobile-top-fix {
     margin-top: 30px;
     margin-bottom: 0px;
   }
+
   .mobile-bottom-fix {
     margin-bottom: 30px;
   }
+
   .mobile-bottom-fix-big {
     margin-bottom: 60px;
   }
@@ -153,8 +236,8 @@ body {
 .main-button-gradient a {
   font-size: 13px;
   color: #fff;
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: rgb(219, 138, 222);
+  background: linear-gradient(-145deg, rgba(219, 138, 222, 1) 0%, rgba(246, 191, 159, 1) 100%);
   padding: 12px 30px;
   display: inline-block;
   border-radius: 5px;
@@ -164,8 +247,8 @@ body {
 }
 
 .main-button-gradient a:hover {
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: rgb(219, 138, 222);
+  background: linear-gradient(-145deg, rgba(219, 138, 222, 1) 0%, rgba(246, 191, 159, 1) 100%);
   opacity: 0.9;
 }
 
@@ -246,14 +329,14 @@ header
 --------------------------------------------- 
 */
 .background-header {
-  background: rgb(219,138,222) !important;
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%) !important;
-  height: 80px!important;
-  position: fixed!important;
-  top: 0!important;
+  background: rgb(219, 138, 222) !important;
+  background: linear-gradient(-145deg, rgba(219, 138, 222, 1) 0%, rgba(246, 191, 159, 1) 100%) !important;
+  height: 80px !important;
+  position: fixed !important;
+  top: 0 !important;
   left: 0;
   right: 0;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
 }
 
 .header-area {
@@ -340,13 +423,13 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #fff!important;
+  color: #fff !important;
   opacity: 0.75;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #fff!important;
+  color: #fff !important;
   opacity: 1;
 }
 
@@ -389,7 +472,7 @@ header
   opacity: 1;
   display: block;
   background: #f7f7f7;
-  color: #2a2a2a!important;
+  color: #2a2a2a !important;
   padding-left: 20px;
   height: 40px;
   line-height: 40px;
@@ -405,7 +488,7 @@ header
 
 .header-area .main-nav .nav li.has-sub ul li a:hover {
   background: #fff;
-  color: #dc8cdb!important;
+  color: #dc8cdb !important;
   padding-left: 25px;
 }
 
@@ -553,6 +636,7 @@ header
     padding-left: 7px;
     padding-right: 7px;
   }
+
   .header-area .main-nav:before {
     display: none;
   }
@@ -562,14 +646,17 @@ header
   .header-area .main-nav .logo {
     color: #1e1e1e;
   }
+
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #dc8cdb!important;
+    color: #dc8cdb !important;
     opacity: 1;
   }
+
   .header-area.header-sticky .nav li.search-icon a {
     width: 100%;
   }
+
   .header-area {
     background-color: #f7f7f7;
     padding: 0px 15px;
@@ -577,18 +664,23 @@ header
     box-shadow: none;
     text-align: center;
   }
+
   .header-area .container {
     padding: 0px;
   }
+
   .header-area .logo {
     margin-left: 30px;
   }
+
   .header-area .menu-trigger {
     display: block !important;
   }
+
   .header-area .main-nav {
     overflow: hidden;
   }
+
   .header-area .main-nav .nav {
     float: none;
     width: 100%;
@@ -599,12 +691,15 @@ header
     transition: all 0s ease 0s;
     margin-left: 0px;
   }
+
   .header-area .main-nav .nav li:first-child {
     border-top: 1px solid #eee;
   }
+
   .header-area.header-sticky .nav {
     margin-top: 100px !important;
   }
+
   .header-area .main-nav .nav li {
     width: 100%;
     background: #fff;
@@ -612,6 +707,7 @@ header
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
+
   .header-area .main-nav .nav li a {
     height: 50px !important;
     line-height: 50px !important;
@@ -620,10 +716,12 @@ header
     background: #f7f7f7 !important;
     color: #191a20 !important;
   }
+
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #dc8cdb!important;
+    color: #dc8cdb !important;
   }
+
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     position: relative;
     visibility: inherit;
@@ -636,23 +734,29 @@ header
     height: 0px;
     transition: all 0s;
   }
+
   .header-area .main-nav .nav li.submenu ul li a {
     font-size: 12px;
     font-weight: 400;
   }
+
   .header-area .main-nav .nav li.submenu ul li a:hover:before {
     width: 0px;
   }
+
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     height: auto;
   }
+
   .header-area .main-nav .nav li.has-sub:after {
     color: #3B566E;
     right: 30px;
     font-size: 14px;
     top: 15px;
   }
-  .header-area .main-nav .nav li.submenu:hover ul, .header-area .main-nav .nav li.submenu:focus ul {
+
+  .header-area .main-nav .nav li.submenu:hover ul,
+  .header-area .main-nav .nav li.submenu:focus ul {
     height: 0px;
   }
 }
@@ -716,7 +820,8 @@ section.main-banner {
   font-size: 17px;
   font-weight: 500;
   text-transform: capitalize;
-  color: #777777;;
+  color: #777777;
+  ;
 }
 
 .main-banner .header-text h2 {
@@ -745,7 +850,7 @@ section.main-banner {
 ---------------------------------------------
 services
 ---------------------------------------------
-*/ 
+*/
 
 .services .item {
   border-radius: 15px;
@@ -844,12 +949,12 @@ section.our-courses .naccs .menu div {
   vertical-align: middle;
   font-weight: 900;
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
-  border: 3px solid rgba(219,138,222,0.5);
+  border: 3px solid rgba(219, 138, 222, 0.5);
 }
 
 section.our-courses .naccs .menu div.active {
   color: #dc8cdb;
-  border: 3px solid rgba(219,138,222,1);
+  border: 3px solid rgba(219, 138, 222, 1);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
 }
 
@@ -890,8 +995,8 @@ section.our-courses ul.nacc li .left-image img {
 
 section.our-courses ul.nacc li .left-image .price h6 {
   position: absolute;
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: rgb(219, 138, 222);
+  background: linear-gradient(-145deg, rgba(219, 138, 222, 1) 0%, rgba(246, 191, 159, 1) 100%);
   color: #fff;
   top: 20px;
   left: 20px;
@@ -1132,8 +1237,8 @@ section.contact-us .contact-info .icon i {
   text-align: center;
   line-height: 50px;
   border-radius: 50%;
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: rgb(219, 138, 222);
+  background: linear-gradient(-145deg, rgba(219, 138, 222, 1) 0%, rgba(246, 191, 159, 1) 100%);
   color: #fff;
 }
 
@@ -1200,8 +1305,8 @@ section.contact-us #contact button {
   float: right;
   font-size: 13px;
   color: #fff;
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: rgb(219, 138, 222);
+  background: linear-gradient(-145deg, rgba(219, 138, 222, 1) 0%, rgba(246, 191, 159, 1) 100%);
   padding: 12px 30px;
   display: inline-block;
   border-radius: 5px;
@@ -1557,8 +1662,8 @@ section.our-office #video .thumb .play-button a {
   transform: translate(-40px, -40px);
   color: #fff;
   font-size: 22px;
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: rgb(219, 138, 222);
+  background: linear-gradient(-145deg, rgba(219, 138, 222, 1) 0%, rgba(246, 191, 159, 1) 100%);
 }
 
 section.our-office #video img {
@@ -1732,16 +1837,19 @@ body {
 }
 
 @media (max-width: 1330px) {
-  .services .owl-nav .owl-next{
+  .services .owl-nav .owl-next {
     right: -30px;
   }
-  .services .owl-nav .owl-prev{
+
+  .services .owl-nav .owl-prev {
     left: -25px;
   }
-  .our-courses .owl-nav .owl-next{
+
+  .our-courses .owl-nav .owl-next {
     right: -30px;
   }
-  .our-courses .owl-nav .owl-prev{
+
+  .our-courses .owl-nav .owl-prev {
     left: -25px;
   }
 }
@@ -1750,53 +1858,65 @@ body {
   .main-banner .right-image {
     margin-left: 60px;
   }
+
   .main-banner .header-text h2 {
     font-size: 62px;
   }
+
   .header-area {
-    background: rgb(219,138,222) !important;
-    background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%) !important;
+    background: rgb(219, 138, 222) !important;
+    background: linear-gradient(-145deg, rgba(219, 138, 222, 1) 0%, rgba(246, 191, 159, 1) 100%) !important;
   }
-  .services .owl-nav .owl-next{
+
+  .services .owl-nav .owl-next {
     right: -70px;
   }
-  .services .owl-nav .owl-prev{
+
+  .services .owl-nav .owl-prev {
     left: -65px;
   }
-  .our-courses .owl-nav .owl-next{
+
+  .our-courses .owl-nav .owl-next {
     right: -70px;
   }
-  .our-courses .owl-nav .owl-prev{
+
+  .our-courses .owl-nav .owl-prev {
     left: -65px;
   }
 }
 
 @media (max-width: 1085px) {
-  .services .owl-nav .owl-next{
+  .services .owl-nav .owl-next {
     right: -30px;
   }
-  .services .owl-nav .owl-prev{
+
+  .services .owl-nav .owl-prev {
     left: -25px;
   }
-  .our-courses .owl-nav .owl-next{
+
+  .our-courses .owl-nav .owl-next {
     right: -30px;
   }
-  .our-courses .owl-nav .owl-prev{
+
+  .our-courses .owl-nav .owl-prev {
     left: -25px;
   }
 }
 
 @media (max-width: 1005px) {
-  .services .owl-nav .owl-next{
+  .services .owl-nav .owl-next {
     display: none;
   }
-  .services .owl-nav .owl-prev{
+
+  .services .owl-nav .owl-prev {
     display: none;
   }
-  .our-courses .owl-nav .owl-next{
+
+  .our-courses .owl-nav .owl-next {
     display: none;
   }
-  .our-courses .owl-nav .owl-prev{
+
+  .our-courses .owl-nav .owl-prev {
     display: none;
   }
 }
@@ -1807,39 +1927,50 @@ body {
     text-align: center;
     margin-bottom: 60px;
   }
+
   .main-banner .right-image {
     margin-left: 0px;
   }
+
   section.our-courses ul.nacc {
     margin-left: 0px !important;
   }
+
   section.simple-cta {
     margin-top: 0px;
   }
+
   section.simple-cta .left-image {
     margin-right: 0px;
     margin-bottom: 45px;
   }
+
   section.contact-us .contact-info {
     margin-top: 15px;
   }
+
   section.contact-us #contact {
     margin-left: 0px;
   }
+
   section.contact-us #contact button {
     float: none;
   }
+
   section.get-info .left-image {
     margin-right: 0px;
     margin-bottom: 30px;
   }
+
   section.get-info .info-item {
     margin-top: 60px;
   }
+
   section.our-office #video {
     margin-left: 0px;
     margin-top: 30px;
   }
+
   section.featured-product .left-info .info-item,
   section.featured-product .right-info .info-item {
     text-align: center;
@@ -1847,17 +1978,21 @@ body {
     position: relative;
     z-index: 2;
   }
+
   section.featured-product .left-info .info-item .icon {
     right: 50%;
     transform: translateX(40px);
   }
+
   section.featured-product .right-info .info-item .icon {
     left: 50%;
     transform: translateX(-40px);
   }
+
   section.featured-product .product-image {
     margin: 60px
   }
+
   section.our-team ul.nacc li .left-content span a,
   section.our-courses ul.nacc li .right-content span {
     margin-right: 15px;
@@ -1869,6 +2004,7 @@ body {
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     display: none;
   }
+
   section.our-courses ul.nacc li .left-image,
   section.our-team ul.nacc li .right-image {
     position: relative;
@@ -1876,33 +2012,41 @@ body {
     margin-left: 0px;
     transform: translateY(-0%);
   }
+
   section.our-courses ul.nacc li .left-image img,
   section.our-team ul.nacc li .right-image img {
     border-radius: 15px;
   }
+
   section.our-courses ul.nacc li,
   section.our-team ul.nacc li {
     padding: 0px;
   }
+
   section.our-courses ul.nacc li .right-content {
     margin-left: 0px;
     padding: 30px;
   }
+
   section.our-team ul.nacc li .left-content {
     margin-right: 0px;
     padding: 30px;
   }
+
   section.our-team .naccs .menu div {
     width: 14%;
     margin: 0px 5px;
   }
+
   section.our-team .naccs .menu div.active img {
     border: 3px solid #dc8cdb;
   }
+
   section.our-team .naccs .menu div h4,
   section.our-team .naccs .menu div span {
     display: none;
   }
+
   section.more-info .count-area-content .count-title {
     font-size: 22px;
   }
