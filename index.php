@@ -236,7 +236,7 @@ https://templatemo.com/tm-573-eduwell
                     <li class="active">
                       <div>
                         <div class="left-image">
-                          <img src="assets/img/SA1.jpg" alt="">
+                          <img src="assets/img/SA1.jpg" alt="Photo of student">
                         </div>
                         <div class="right-content">
                           <h4>Learner-Centered</h4>
@@ -250,7 +250,7 @@ https://templatemo.com/tm-573-eduwell
                     <li>
                       <div>
                         <div class="left-image">
-                          <img src="assets/img/SA2.png" alt="">
+                          <img src="assets/img/SA2.png" alt="Photo of student">
                         </div>
                         <div class="right-content">
                           <h4>Active Learning</h4>
@@ -264,7 +264,7 @@ https://templatemo.com/tm-573-eduwell
                     <li>
                       <div>
                         <div class="left-image">
-                          <img src="assets/img/SA3.jpg" style="" alt="">
+                          <img src="assets/img/SA3.jpg" alt="Photo of student">
                         </div>
                         <div class="right-content">
                           <h4>Flexible & Accelerated Pacing</h4>
