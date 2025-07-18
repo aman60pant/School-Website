@@ -18,6 +18,7 @@
                 <ul class="sub-menu">
                   <li><a href="about-us.php">About Us</a></li>
                   <li><a href="our-services.php">Our Services</a></li>
+                  <li><a href="Gallery.php">Photo Gallery</a></li>
                 </ul>
               </li>
               <li><a href="index.php #testimonials">Testimonials</a></li>

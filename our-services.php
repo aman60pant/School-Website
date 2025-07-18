@@ -9,7 +9,7 @@
   <meta name="author" content="">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-  <title>EduWell - Education HTML5 Template</title>
+  <title>OUR SERVICES | Cambridge International School</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,10 +20,6 @@
   <link rel="stylesheet" href="assets/css/owl.css">
   <link rel="stylesheet" href="assets/css/lightbox.css">
   <!--
-
-TemplateMo 573 EduWell
-
-https://templatemo.com/tm-573-eduwell
 
 -->
 </head>
@@ -49,12 +45,12 @@ https://templatemo.com/tm-573-eduwell
     </div>
   </section>
 
-  <section class="services">
+
+  <section class="services" id="services">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <div class="section-heading">
-            <h6>Our Services</h6>
             <h4>Provided <em>Services</em></h4>
           </div>
         </div>
@@ -63,109 +59,121 @@ https://templatemo.com/tm-573-eduwell
             <div class="item">
               <div class="service-item">
                 <div class="icon">
-                  <img src="assets/images/service-icon-01.png" alt="">
+                  <img src="assets/img/Playgroup & Nursery.png" alt="">
                 </div>
-                <h4>Useful Tricks</h4>
-                <p>Food & truck tumeric taxidermy hoodie chiasore bitters retroed gentrify street portland.</p>
+                <h4>Playgroup & Nursery</h4>
+                <p>Fostering early childhood development with interactive learning and caring environment.</p>
+
               </div>
             </div>
             <div class="item">
               <div class="service-item">
                 <div class="icon">
-                  <img src="assets/images/service-icon-02.png" alt="">
+                  <img src="assets/img/Kindergarten.png" alt="">
                 </div>
-                <h4>Creative Ideas</h4>
-                <p>Food & truck tumeric taxidermy hoodie chiasore bitters retroed gentrify street portland.</p>
+                <h4>Kindergarten</h4>
+                <p>Focus on foundational skills through fun, phonics, storytelling, and basic math.</p>
+
               </div>
             </div>
             <div class="item">
               <div class="service-item">
                 <div class="icon">
-                  <img src="assets/images/service-icon-03.png" alt="">
+                  <img src="assets/img/Primary Education.png" alt="">
                 </div>
-                <h4>Ready Target</h4>
-                <p>Food & truck tumeric taxidermy hoodie chiasore bitters retroed gentrify street portland.</p>
+                <h4>Primary Education</h4>
+                <p>Balanced focus on academics, values, and individual growth using international pedagogy.</p>
+
               </div>
             </div>
             <div class="item">
               <div class="service-item">
                 <div class="icon">
-                  <img src="assets/images/service-icon-04.png" alt="">
+                  <img src="assets/img/Middle School.png" alt="">
                 </div>
-                <h4>Technology</h4>
-                <p>Food & truck tumeric taxidermy hoodie chiasore bitters retroed gentrify street portland.</p>
+                <h4>Middle School</h4>
+                <p>Inquiry-based curriculum, science labs, digital classrooms, and strong moral education.</p>
+
               </div>
             </div>
             <div class="item">
               <div class="service-item">
                 <div class="icon">
-                  <img src="assets/images/service-icon-01.png" alt="">
+                  <img src="assets/img/Secondary Classes.png" alt="">
                 </div>
-                <h4>Useful Tricks</h4>
-                <p>Food & truck tumeric taxidermy hoodie chiasore bitters retroed gentrify street portland.</p>
+                <h4>Secondary Classes</h4>
+                <p>CBSE/ICSE/IGCSE-based curriculum with exam prep, career guidance & continuous evaluation.</p>
+
               </div>
             </div>
             <div class="item">
               <div class="service-item">
                 <div class="icon">
-                  <img src="assets/images/service-icon-02.png" alt="">
+                  <img src="assets/img/Senior Secondary.png" alt="">
                 </div>
-                <h4>Creative Ideas</h4>
-                <p>Food & truck tumeric taxidermy hoodie chiasore bitters retroed gentrify street portland.</p>
+                <h4>Senior Secondary</h4>
+                <p>Streams: Science, Commerce, Humanities – with expert faculty and lab integration.</p>
+
               </div>
             </div>
             <div class="item">
               <div class="service-item">
                 <div class="icon">
-                  <img src="assets/images/service-icon-03.png" alt="">
+                  <img src="assets/img/International Curriculum.png" alt="">
                 </div>
-                <h4>Ready Target</h4>
-                <p>Food & truck tumeric taxidermy hoodie chiasore bitters retroed gentrify street portland.</p>
+                <h4>International Curriculum</h4>
+                <p>Integration of international best practices with national board standards.</p>
+
               </div>
             </div>
             <div class="item">
               <div class="service-item">
                 <div class="icon">
-                  <img src="assets/images/service-icon-04.png" alt="">
+                  <img src="assets/img/Smart Classrooms.jpg" alt="">
                 </div>
-                <h4>Technology</h4>
-                <p>Food & truck tumeric taxidermy hoodie chiasore bitters retroed gentrify street portland.</p>
+                <h4>Smart Classrooms</h4>
+                <p>Digital boards, AV aids, interactive lessons to enhance learning experience.</p>
+
               </div>
             </div>
             <div class="item">
               <div class="service-item">
                 <div class="icon">
-                  <img src="assets/images/service-icon-01.png" alt="">
+                  <img src="assets/img/STEM Labs.png" alt="">
                 </div>
-                <h4>Useful Tricks</h4>
-                <p>Food & truck tumeric taxidermy hoodie chiasore bitters retroed gentrify street portland.</p>
+                <h4>STEM Labs</h4>
+                <p>Fully equipped Physics, Chemistry, Biology, and Computer Labs.</p>
+
               </div>
             </div>
             <div class="item">
               <div class="service-item">
                 <div class="icon">
-                  <img src="assets/images/service-icon-02.png" alt="">
+                  <img src="assets/img/Co-Curricular Activities.png" alt="">
                 </div>
-                <h4>Creative Ideas</h4>
-                <p>Food & truck tumeric taxidermy hoodie chiasore bitters retroed gentrify street portland.</p>
+                <h4>Art, Music & Sports</h4>
+                <p>Holistic development through dance, drama, yoga, music and physical education.</p>
+
               </div>
             </div>
             <div class="item">
               <div class="service-item">
                 <div class="icon">
-                  <img src="assets/images/service-icon-03.png" alt="">
+                  <img src="assets/img/Transportation Facility.png" alt="">
                 </div>
-                <h4>Ready Target</h4>
-                <p>Food & truck tumeric taxidermy hoodie chiasore bitters retroed gentrify street portland.</p>
+                <h4>Safe Transport</h4>
+                <p>GPS-enabled buses with trained staff to ensure safe pickup and drop.</p>
+
               </div>
             </div>
             <div class="item">
               <div class="service-item">
                 <div class="icon">
-                  <img src="assets/images/service-icon-04.png" alt="">
+                  <img src="assets/img/Qualified Faculty.png" alt="">
                 </div>
-                <h4>Technology</h4>
-                <p>Food & truck tumeric taxidermy hoodie chiasore bitters retroed gentrify street portland.</p>
+                <h4>Experienced Teachers</h4>
+                <p>Dedicated and trained staff focusing on concept clarity and mentoring.</p>
+
               </div>
             </div>
           </div>
@@ -174,123 +182,10 @@ https://templatemo.com/tm-573-eduwell
     </div>
   </section>
 
-
-
-  <section class="featured-product">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-heading">
-            <h6>Featured Service</h6>
-            <h4>Best Of Our <em>Product</em></h4>
-          </div>
-        </div>
-        <div class="col-lg-3 align-self-center">
-          <div class="left-info">
-            <div class="col-lg-12">
-              <div class="info-item">
-                <div class="icon">
-                  <img src="assets/images/service-icon-01.png" alt="">
-                </div>
-                <h4>Best Strategy</h4>
-                <p>Food & truck tumeric taxidermy hoodie chiasore bitters retroed gentrify street portland.</p>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="info-item last-info">
-                <div class="icon">
-                  <img src="assets/images/service-icon-01.png" alt="">
-                </div>
-                <h4>Best Strategy</h4>
-                <p>Food & truck tumeric taxidermy hoodie chiasore bitters retroed gentrify street portland.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="product-image">
-            <img src="assets/images/featured-product.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-lg-3 align-self-center">
-          <div class="right-info">
-            <div class="col-lg-12">
-              <div class="info-item">
-                <div class="icon">
-                  <img src="assets/images/service-icon-01.png" alt="">
-                </div>
-                <h4>Best Strategy</h4>
-                <p>Food & truck tumeric taxidermy hoodie chiasore bitters retroed gentrify street portland.</p>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="info-item last-info">
-                <div class="icon">
-                  <img src="assets/images/service-icon-01.png" alt="">
-                </div>
-                <h4>Best Strategy</h4>
-                <p>Food & truck tumeric taxidermy hoodie chiasore bitters retroed gentrify street portland.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact-us our-office">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="left-info">
-            <div class="section-heading">
-              <h6>Our Office</h6>
-              <h4>Get closer to <em>EduWell</em></h4>
-            </div>
-            <p>Trust fund nocore broklyn humblebrag mustache
-              pork kitsch, bicycle rights hexagon schlitz keytar palo is
-              santo drinking vinegar fam ramps. <br><br>Four dollar toast and
-              edison bulb vinyl, listicle hashtag pug scenester typewrit
-              er yuccie street artboard or whatever to fill place.</p>
-            <ul>
-              <li>- Selfies you probably haven't heard of them.</li>
-              <li>- Tousled cold-pressed chicharrones yuccie.</li>
-              <li>- Pabst iPhone chartreuse shabby chic tumeric.</li>
-              <li>- Scenester normcore mumblecore snackwave.</li>
-            </ul>
-            <div class="main-button-gradient">
-              <a href="our-services.html">Our Services</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-8">
-          <div id="video">
-            <div class="thumb">
-              <img src="assets/images/video-thumb.jpg" alt="">
-              <div class="play-button">
-                <a href="http://youtube.com" target="_blank"><i class="fa fa-play"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <ul class="social-icons">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-          </ul>
-        </div>
-        <div class="col-lg-12">
-          <p class="copyright">Copyright © 2022 EduWell Co., Ltd. All Rights Reserved.
-
-            <br>Design: <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- Footer Start -->
+   <?php
+   include 'include/footer.php'
+   ?>
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->

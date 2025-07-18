@@ -163,6 +163,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.gallery-img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 25px;
+  border-radius: 8px;
+}
+
+.gallery-img:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.03);
+}
+
 a {
   text-decoration: none !important;
 }
@@ -900,7 +915,8 @@ services
 
 /* Footer Styles - Mostly Pink Theme */
 .site-footer {
-  background-color: #F8BBD0; /* Light pink background */
+  background-color: #F8BBD0;
+  /* Light pink background */
   color: #333;
   padding: 40px 20px;
   font-family: 'Segoe UI', sans-serif;
@@ -922,7 +938,8 @@ services
 .footer-box h3,
 .footer-box h4 {
   margin-bottom: 15px;
-  color: #D81B60; /* Medium pink for headings */
+  color: #D81B60;
+  /* Medium pink for headings */
 }
 
 .footer-box p,
@@ -1094,7 +1111,7 @@ section.our-courses ul.nacc li .right-content {
 }
 
 /* Instead of applying flex to li, apply to the div inside */
-section.our-courses ul.nacc li > div {
+section.our-courses ul.nacc li>div {
   display: flex;
   flex-direction: row;
   align-items: stretch;
