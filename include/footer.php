@@ -63,49 +63,50 @@
             </div>
           </form>
         </div>
-        <div class="col-lg-12">
-          <ul class="social-icons">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-          </ul>
-        </div>
+
       </div>
     </div>
   </section>
-<footer class="site-footer">
-  <div class="footer-container">
-    
-    <!-- About -->
-    <div class="footer-box">
-      <h3>Cambridge International School</h3>
-      <p>Empowering students with knowledge, discipline, and values since 1995.</p>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="col-lg-12 social-icons-wrapper">
+        <ul class="social-icons">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa fa-rss"></i></a></li>
+          <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+        </ul>
+      </div>
+      <!-- About -->
+      <div class="footer-box">
+        <h3>Cambridge International School</h3>
+        <p>Empowering students with knowledge, discipline, and values since 1995.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-box">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.php #top">Home</a></li>
+          <li><a href="about-us.php">About Us</a></li>
+          <li><a href="index.php #testimonials">Testimonials</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="contact.php">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-box">
+        <h4>Contact Us</h4>
+        <p><strong>Address:</strong> Shahpur Bus Stand, Talheri Buzurg, Saharanpur</p>
+        <p><strong>Phone:</strong> +91 9876543210</p>
+        <p><strong>Email:</strong> info@cambridgeschool.com</p>
+      </div>
+
     </div>
 
-    <!-- Quick Links -->
-    <div class="footer-box">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="index.php #top">Home</a></li>
-        <li><a href="about-us.php">About Us</a></li>
-        <li><a href="index.php #testimonials">Testimonials</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="contact.php">Contact</a></li>
-      </ul>
-    </div>
-
-    <!-- Contact Info -->
-    <div class="footer-box">
-      <h4>Contact Us</h4>
-      <p><strong>Address:</strong> Shahpur Bus Stand, Talheri Buzurg, Saharanpur</p>
-      <p><strong>Phone:</strong> +91 9876543210</p>
-      <p><strong>Email:</strong> info@cambridgeschool.com</p>
-    </div>
-    
-  </div>
-
-  <hr>
-  <p class="footer-bottom">&copy; 2025 Cambridge International School. All rights reserved.</p>
-</footer>
+    <hr>
+    <p class="footer-bottom">&copy; 2025 Cambridge International School. All rights reserved.</p>
+  </footer>

@@ -21,7 +21,7 @@ Table of contents
 10. preloader
 11. search
 12. portfolio
-
+13. background color
 --------------------------------------------- */
 /* 
 ---------------------------------------------
@@ -114,7 +114,7 @@ figcaption {
 }
 
 .banner-carousel .item img {
-border-radius: 10px;
+  border-radius: 10px;
 }
 
 
@@ -934,9 +934,8 @@ services
 
 /* Footer Styles - Mostly Pink Theme */
 .site-footer {
-  background-color: #F8BBD0;
+  background-color: #093c77;
   /* Light pink background */
-  color: #333;
   padding: 40px 20px;
   font-family: 'Segoe UI', sans-serif;
 }
@@ -964,7 +963,7 @@ services
 .footer-box p,
 .footer-box a,
 .footer-box ul li {
-  color: #333;
+  color: white;
   font-size: 14px;
   line-height: 1.6;
   text-decoration: none;
@@ -985,7 +984,7 @@ services
 }
 
 .site-footer hr {
-  border-color: rgba(0, 0, 0, 0.1);
+  border-color: white;
   margin: 20px 0;
 }
 
@@ -993,9 +992,42 @@ services
   text-align: center;
   font-size: 14px;
   margin: 0;
-  color: #555;
+  color: white;
 }
 
+.social-icons-wrapper {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.social-icons {
+  display: inline-flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.social-icons li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #6c63ff;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons li a:hover {
+  background: #6c63ff;
+  color: #fff;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 18px rgba(108, 99, 255, 0.3);
+}
 
 
 /*
@@ -2169,4 +2201,67 @@ body {
   section.more-info .count-area-content .count-title {
     font-size: 22px;
   }
+}
+
+/* Background Color  */
+.main-banner {
+  background: linear-gradient(135deg, #fef1f7, #ffe3ec);
+}
+
+.services {
+  background-color: #f9f9f9;
+}
+
+section.our-courses {
+  background: linear-gradient(120deg, #f0f8ff, #ffffff);
+}
+
+.testimonials {
+  background: #faf4ff;
+}
+
+.simple-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.simple-cta>* {
+  position: relative;
+  z-index: 2;
+}
+
+/* WAVE DIVIDER STYLING */
+.wave-divider {
+  line-height: 0;
+  position: relative;
+  top: -1px;
+  margin-bottom: -150px;
+}
+
+.wave-divider svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* SECTION SPACING STANDARDIZATION */
+section {
+  margin: 0;
+  padding: 100px 0;
+}
+
+/* BACKGROUND COLOR SECTION-WISE */
+section#services {
+  background-color: #f9f9f9;
+}
+
+section#why-we {
+  background-color: #fff;
+}
+
+section#testimonials {
+  background-color: #faf4ff;
 }
