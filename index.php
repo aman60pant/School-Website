@@ -49,15 +49,15 @@
         </div>
         <div class="col-lg-6">
           <div class="owl-carousel banner-carousel">
-            <div class="item" style="height: 300px;"><img src="assets/img/Banners/img1.jpg" alt="Slide 1"></div>
-            <div class="item" style="height: 300px;"><img src="assets/img/Banners/img2.jpg" alt="Slide 2"></div>
-            <div class="item" style="height: 300px;"><img src="assets/img/Banners/img3.jpg" alt="Slide 3"></div>
-            <div class="item" style="height: 300px;"><img src="assets/img/Banners/img4.jpg" alt="Slide 4"></div>
-            <div class="item" style="height: 300px;"><img src="assets/img/Banners/img5.jpg" alt="Slide 5"></div>
-            <div class="item" style="height: 300px;"><img src="assets/img/Banners/img6.jpg" alt="Slide 6"></div>
-            <div class="item" style="height: 300px;"><img src="assets/img/Banners/img7.jpg" alt="Slide 7"></div>
-            <div class="item" style="height: 300px;"><img src="assets/img/Banners/img8.jpg" alt="Slide 8"></div>
-            <div class="item" style="height: 300px;"><img src="assets/img/Banners/img9.jpg" alt="Slide 9"></div>
+            <div class="item"><img src="assets/img/Banners/img1.jpg" alt="Slide 1"></div>
+            <div class="item"><img src="assets/img/Banners/img2.jpg" alt="Slide 2"></div>
+            <div class="item"><img src="assets/img/Banners/img3.jpg" alt="Slide 3"></div>
+            <div class="item"><img src="assets/img/Banners/img4.jpg" alt="Slide 4"></div>
+            <div class="item"><img src="assets/img/Banners/img5.jpg" alt="Slide 5"></div>
+            <div class="item"><img src="assets/img/Banners/img6.jpg" alt="Slide 6"></div>
+            <div class="item"><img src="assets/img/Banners/img7.jpg" alt="Slide 7"></div>
+            <div class="item"><img src="assets/img/Banners/img8.jpg" alt="Slide 8"></div>
+            <div class="item"><img src="assets/img/Banners/img9.jpg" alt="Slide 9"></div>
           </div>
         </div>
       </div>
