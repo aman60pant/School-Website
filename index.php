@@ -57,7 +57,6 @@
             <div class="item"><img src="assets/img/Banners/img6.jpg" alt="Slide 6"></div>
             <div class="item"><img src="assets/img/Banners/img7.jpg" alt="Slide 7"></div>
             <div class="item"><img src="assets/img/Banners/img8.jpg" alt="Slide 8"></div>
-            <div class="item"><img src="assets/img/Banners/img9.jpg" alt="Slide 9"></div>
           </div>
         </div>
       </div>
