@@ -29,7 +29,7 @@
 
     <?php
     // Adjust pattern if your images have a different naming scheme!
-    $images = glob("assets/img/Gallery*.{jpg,jpeg,png,gif}", GLOB_BRACE);
+    $images = glob("assets/photos/*.{jpg,jpeg,png,gif}", GLOB_BRACE);
     ?>
 
     <!-- Gallery Grid -->
