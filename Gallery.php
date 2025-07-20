@@ -2,35 +2,18 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
     <title>OUR SERVICES | Cambridge International School</title>
-
-    <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-eduwell-style.css">
     <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/lightbox.css">
-    <!--
-
--->
 </head>
 
 <body>
+    <?php include 'include/header.php'; ?>
 
-    <!-- ***** Header Area Start ***** -->
-    <?php
-    include 'include/header.php'
-    ?>
-    <!-- ***** Header Area End ***** -->
     <section class="page-heading">
         <div class="container">
             <div class="row">
@@ -44,127 +27,90 @@
         </div>
     </section>
 
-    <!-- Gallery Thumbnails -->
     <?php
-    $images = glob("assets/img/*.{jpg,jpeg,png,gif}", GLOB_BRACE);
+    // Adjust pattern if your images have a different naming scheme!
+    $images = glob("assets/img/Gallery*.{jpg,jpeg,png,gif}", GLOB_BRACE);
     ?>
 
-    <!-- Gallery Thumbnails -->
+    <!-- Gallery Grid -->
     <div class="gallery">
         <?php foreach ($images as $index => $img): ?>
-            <img src="<?= $img ?>" onclick="openLightbox();showSlide(<?= $index + 1 ?>)" class="thumbnail">
+            <img src="<?= $img ?>"
+                onclick="openLightbox(<?= $index + 1 ?>)"
+                class="thumbnail"
+                alt="Gallery Image <?= $index + 1 ?>">
         <?php endforeach; ?>
     </div>
 
     <!-- Lightbox Modal -->
-    <div id="lightboxModal" class="lightbox">
+    <div id="lightboxModal" class="lightbox" onclick="if(event.target==this)closeLightbox();">
         <span class="close" onclick="closeLightbox()">&times;</span>
-
-        <!-- Slides -->
         <?php foreach ($images as $img): ?>
-            <div class="slide"><img src="<?= $img ?>" class="lightbox-img"></div>
+            <div class="slide">
+                <img src="<?= $img ?>" class="lightbox-img" alt="Large gallery image">
+            </div>
         <?php endforeach; ?>
-
-        <!-- Navigation -->
         <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
         <a class="next" onclick="changeSlide(1)">&#10095;</a>
     </div>
 
+    <?php include 'include/footer.php'; ?>
 
-
-    <!-- Navigation -->
-    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-    <a class="next" onclick="changeSlide(1)">&#10095;</a>
-    </div>
-    <!-- Footer Start -->
-    <?php
-    include 'include/footer.php'
-    ?>
-
-    <!-- Scripts -->
-    <!-- Bootstrap core JavaScript -->
+    <!-- Bootstrap core JavaScript and dependencies -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Other site scripts can be loaded below -->
 
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/tabs.js"></script>
-    <script src="assets/js/video.js"></script>
-    <script src="assets/js/slick-slider.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <!-- Lightbox JS -->
     <script>
-        //according to loftblog tut
-        $('.nav li:first').addClass('active');
+        let slideIndex = 1;
 
-        var showSection = function showSection(section, isAnimate) {
-            var
-                direction = section.replace(/#/, ''),
-                reqSection = $('.section').filter('[data-section="' + direction + '"]'),
-                reqSectionPos = reqSection.offset().top - 0;
-
-            if (isAnimate) {
-                $('body, html').animate({
-                        scrollTop: reqSectionPos
-                    },
-                    800);
-            } else {
-                $('body, html').scrollTop(reqSectionPos);
-            }
-
-        };
-
-        var checkSection = function checkSection() {
-            $('.section').each(function() {
-                var
-                    $this = $(this),
-                    topEdge = $this.offset().top - 80,
-                    bottomEdge = topEdge + $this.height(),
-                    wScroll = $(window).scrollTop();
-                if (topEdge < wScroll && bottomEdge > wScroll) {
-                    var
-                        currentId = $this.data('section'),
-                        reqLink = $('a').filter('[href*=\\#' + currentId + ']');
-                    reqLink.closest('li').addClass('active').
-                    siblings().removeClass('active');
-                }
-            });
-        };
-
-        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function(e) {
-            e.preventDefault();
-            showSection($(this).attr('href'), true);
-        });
-
-        $(window).scroll(function() {
-            checkSection();
-        });
-        let currentSlideIndex = 1;
-
-        function openLightbox() {
-            document.getElementById("lightboxModal").style.display = "block";
+        function openLightbox(n) {
+            document.getElementById('lightboxModal').classList.add('open');
+            showSlide(n);
         }
 
         function closeLightbox() {
-            document.getElementById("lightboxModal").style.display = "none";
-        }
-
-        function showSlide(n) {
-            let slides = document.getElementsByClassName("slide");
-            if (n > slides.length) currentSlideIndex = 1;
-            else if (n < 1) currentSlideIndex = slides.length;
-            else currentSlideIndex = n;
-
+            document.getElementById('lightboxModal').classList.remove('open');
+            // Hide all slides
+            let slides = document.getElementsByClassName('slide');
             for (let i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
+        }
 
-            slides[currentSlideIndex - 1].style.display = "block";
+        function showSlide(n) {
+            let slides = document.getElementsByClassName('slide');
+            if (n > slides.length) {
+                slideIndex = 1;
+            } else if (n < 1) {
+                slideIndex = slides.length;
+            } else {
+                slideIndex = n;
+            }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
         }
 
         function changeSlide(n) {
-            showSlide(currentSlideIndex + n);
+            showSlide(slideIndex + n);
         }
+        // Keyboard navigation and close on ESC
+        document.addEventListener('keydown', function(e) {
+            const modal = document.getElementById('lightboxModal');
+            if (!modal.classList.contains('open')) return;
+            if (e.key === "ArrowLeft") {
+                changeSlide(-1);
+            }
+            if (e.key === "ArrowRight") {
+                changeSlide(1);
+            }
+            if (e.key === "Escape") {
+                closeLightbox();
+            }
+        });
     </script>
 </body>
 

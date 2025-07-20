@@ -111,14 +111,14 @@ figcaption {
   object-fit: cover;
   display: block;
   margin-bottom: 25px;
-  
+
 }
 
 .banner-carousel .item img {
   border-radius: 10px;
-  border: 4px solid rgb(252, 196, 196); 
-  padding: 2px; 
-  box-sizing: border-box; 
+  border: 4px solid rgb(252, 196, 196);
+  padding: 2px;
+  box-sizing: border-box;
 }
 
 
@@ -188,68 +188,157 @@ body {
 
 /* Gallery Inages */
 
+/* Gallery Thumbnails */
 .gallery {
   display: flex;
-  gap: 10px;
   flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 30px 0;
 }
 
-.thumbnail {
-  width: 270px;
+.gallery .thumbnail {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
   cursor: pointer;
-  border-radius: 6px;
-  transition: transform 0.2s;
-}
-.thumbnail:hover {
-  transform: scale(1.05);
+  border-radius: 4px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 6px rgba(30, 30, 30, 0.07);
 }
 
+.gallery .thumbnail:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 16px rgba(30, 30, 30, 0.18);
+}
+
+/* Lightbox Modal Overlay */
 .lightbox {
   display: none;
   position: fixed;
-  z-index: 999;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.9);
-  display: flex;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.88);
+  overflow: auto;
   align-items: center;
   justify-content: center;
+  animation: fadeIn 0.25s;
+}
+
+/* Show modal (add this with JS when opening) */
+.lightbox.open {
+  display: flex;
+}
+
+/* Modal Content (slides) */
+.slide {
+  display: none;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .lightbox-img {
-  max-width: 90%;
-  max-height: 80vh;
-  border-radius: 10px;
+  max-width: 90vw;
+  max-height: 82vh;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.37);
+  background: #fff;
 }
 
-.slide {
-  display: none;
-}
-
+/* Close Button */
 .close {
   position: absolute;
-  top: 20px;
-  right: 35px;
-  color: white;
+  top: 35px;
+  right: 50px;
+  color: #fff;
   font-size: 40px;
+  font-weight: bold;
+  transition: color 0.2s;
+  cursor: pointer;
+  z-index: 1010;
+}
+
+.close:hover,
+.close:focus {
+  color: #ffa500;
+  text-decoration: none;
   cursor: pointer;
 }
 
-.prev, .next {
+/* Navigation Buttons */
+.prev,
+.next {
+  cursor: pointer;
   position: absolute;
   top: 50%;
-  font-size: 40px;
-  color: white;
-  cursor: pointer;
-  padding: 16px;
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-top: -30px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
   user-select: none;
+  transition: background 0.2s;
+  z-index: 1010;
 }
+
+.prev:hover,
+.next:hover {
+  background: rgba(255, 165, 0, 0.3);
+}
+
 .prev {
-  left: 0;
+  left: 25px;
 }
+
 .next {
-  right: 0;
+  right: 25px;
 }
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .gallery .thumbnail {
+    width: 90px;
+    height: 60px;
+  }
+
+  .close {
+    top: 15px;
+    right: 16px;
+    font-size: 30px;
+  }
+
+  .prev,
+  .next {
+    font-size: 40px;
+    left: 6px;
+    right: 6px;
+  }
+
+  .lightbox-img {
+    max-width: 98vw;
+    max-height: 50vh;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 
 
 a {
@@ -877,7 +966,7 @@ section.main-banner {
   margin-left: 120px;
   position: relative;
   z-index: 2;
-  
+
 }
 
 .main-banner .right-image img {
