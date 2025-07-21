@@ -26,12 +26,25 @@
             </li>
             <li><a href="index.php #testimonials">Testimonials</a></li>
             <li><a href="contact.php">Contact Us</a></li>
-            <li><a href="login_form.php">Login</a></li>
-          </ul>
-          <a class='menu-trigger'>
-            <span>Menu</span>
-          </a>
-          <!-- ***** Menu End ***** -->
+            <ul class="navbar-nav ms-auto">
+              <?php session_start(); ?>
+              <?php if (isset($_SESSION['user_id'])): ?>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Welcome, <?php echo htmlspecialchars($_SESSION['user_name']); ?></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="logout.php">Logout</a>
+                </li>
+              <?php else: ?>
+                <li class="nav-item">
+                  <a class="nav-link" href="login_form.php">Login</a>
+                </li>
+              <?php endif; ?>
+              </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
         </nav>
       </div>
     </div>
