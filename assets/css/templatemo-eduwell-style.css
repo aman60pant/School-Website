@@ -1959,7 +1959,24 @@ section.our-office #video img {
   border-radius: 20px;
 }
 
+/*
+staff-statement page
+*/
 
+
+th[scope="col"] {
+  background: #f7f7f7;
+  padding: 10px 14px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.05em;
+  vertical-align: middle;
+}
+
+.table-bordered {
+  border: black;
+}
 
 /*
 ---------------------------------------------
