@@ -183,9 +183,9 @@
   </section>
 
   <!-- Footer Start -->
-   <?php
-   include 'include/footer.php'
-   ?>
+  <?php
+  include 'include/footer.php'
+  ?>
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
@@ -200,7 +200,6 @@
   <script src="assets/js/slick-slider.js"></script>
   <script src="assets/js/custom.js"></script>
   <script>
-    
     $('.nav li:first').addClass('active');
 
     var showSection = function showSection(section, isAnimate) {
