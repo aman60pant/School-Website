@@ -20,10 +20,6 @@
   <link rel="stylesheet" href="assets/css/templatemo-eduwell-style.css">
   <link rel="stylesheet" href="assets/css/owl.css">
   <link rel="stylesheet" href="assets/css/lightbox.css">
-  <!--
-
-
--->
 </head>
 
 <body>

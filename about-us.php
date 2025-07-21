@@ -20,13 +20,6 @@
   <link rel="stylesheet" href="assets/css/templatemo-eduwell-style.css">
   <link rel="stylesheet" href="assets/css/owl.css">
   <link rel="stylesheet" href="assets/css/lightbox.css">
-  <!--
-
-TemplateMo 573 EduWell
-
-https://templatemo.com/tm-573-eduwell
-
--->
 </head>
 
 <body>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>OUR SERVICES | Cambridge International School</title>
+    <title>OUR GALLERY | Cambridge International School</title>
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-eduwell-style.css">
@@ -28,7 +28,6 @@
     </section>
 
     <?php
-    // Adjust pattern if your images have a different naming scheme!
     $images = glob("assets/photos/*.{jpg,jpeg,png,gif}", GLOB_BRACE);
     ?>
 

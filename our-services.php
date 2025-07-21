@@ -200,7 +200,7 @@
   <script src="assets/js/slick-slider.js"></script>
   <script src="assets/js/custom.js"></script>
   <script>
-    //according to loftblog tut
+    
     $('.nav li:first').addClass('active');
 
     var showSection = function showSection(section, isAnimate) {
