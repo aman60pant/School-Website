@@ -26,6 +26,7 @@
             </li>
             <li><a href="index.php #testimonials">Testimonials</a></li>
             <li><a href="contact.php">Contact Us</a></li>
+            <li><a href="login_form.php">Login</a></li>
           </ul>
           <a class='menu-trigger'>
             <span>Menu</span>
