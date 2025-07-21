@@ -1,5 +1,9 @@
 <?php
 include 'dbconnect.php'; // Your database connection
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
 
 if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['login'])) {
     $email = mysqli_real_escape_string($conn, $_POST['email']);

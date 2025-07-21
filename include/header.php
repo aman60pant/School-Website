@@ -27,7 +27,10 @@
             <li><a href="index.php #testimonials">Testimonials</a></li>
             <li><a href="contact.php">Contact Us</a></li>
             <ul class="navbar-nav ms-auto">
-              <?php session_start(); ?>
+              <?php
+              if (session_status() == PHP_SESSION_NONE) {
+                session_start();
+              } ?>
               <?php if (isset($_SESSION['user_id'])): ?>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Welcome, <?php echo htmlspecialchars($_SESSION['user_name']); ?></a>
@@ -40,7 +43,7 @@
                   <a class="nav-link" href="login_form.php">Login</a>
                 </li>
               <?php endif; ?>
-              </ul>
+            </ul>
             <a class='menu-trigger'>
               <span>Menu</span>
             </a>
