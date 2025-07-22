@@ -32,7 +32,7 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <form id="contact" action="" method="post">
+          <form id="contact" action="insert.php" method="post">
             <div class="row">
               <div class="col-lg-12">
                 <div class="section-heading">
@@ -48,7 +48,7 @@
               <div class="col-lg-12">
                 <fieldset>
                   <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email"
-                    required="">
+                    required>
                 </fieldset>
               </div>
               <div class="col-lg-12">
