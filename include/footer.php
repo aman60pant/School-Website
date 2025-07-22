@@ -1,4 +1,5 @@
-  <section class="contact-us">
+
+<section class="contact-us">
     <div class="container">
       <div class="row">
         <div class="col-lg-8">
@@ -92,7 +93,7 @@
           <li><a href="index.php #top">Home</a></li>
           <li><a href="about-us.php">About Us</a></li>
           <li><a href="index.php #testimonials">Testimonials</a></li>
-          <li><a href="#">Gallery</a></li>
+          <li><a href="Gallery.php">Gallery</a></li>
           <li><a href="contact.php">Contact</a></li>
         </ul>
       </div>
