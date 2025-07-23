@@ -58,7 +58,8 @@
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <button type="submit" id="form-submit" class="main-gradient-button">Send Message</button>
+                  <button type="submit" id="form-submit" class="main-gradient-button" style="margin-bottom: 10px; margin-left: 10px;">Send Message</button>
+                  <button type="view-message" id="view-message" class="main-gradient-button" onclick="window.location.href='view-message.php';" style="margin-left: 10px;">View Sent Message?</button>
                 </fieldset>
               </div>
             </div>
