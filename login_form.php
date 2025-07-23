@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['login'])) {
     $result = mysqli_query($conn, $query);
 
     if ($user = mysqli_fetch_assoc($result)) {
-        if (password_verify($password, $user['Password'])) {
+        if (password_verify($password, $user['password'])) {
             $_SESSION['user_id'] = $user['Id'];
             $_SESSION['user_name'] = $user['full_name'];
             header("Location: index.php");
