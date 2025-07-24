@@ -150,6 +150,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         <?php endif; ?>
     </div>
+    
+
+    <!-- Footer Start  -->
     <footer class="site-footer">
     <div class="footer-container">
       <div class="col-lg-12 social-icons-wrapper">

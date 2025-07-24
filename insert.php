@@ -15,7 +15,7 @@ if (isset($_SESSION['user_id']) && $_SERVER["REQUEST_METHOD"] == "POST") {
     $message = mysqli_real_escape_string($conn, $_POST['message'] ?? '');
 
     // SQL Query
-    $sql = "INSERT INTO contact (name, email, message) VALUES ('$name', '$email', '$message')";
+    $sql = "INSERT INTO contact(name, email, message) VALUES ('$name', '$email', '$message')";
 
     if ($conn->query($sql) === TRUE) {
         echo "<script> alert('Data submitted successfully!');
