@@ -16,36 +16,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['delete']) && isset($_POST['contact_id'])) {
         $contact_id = intval($_POST['contact_id']);
 
-        // Step 1: Get the image filename from the DB
-        $stmt = $conn->prepare("SELECT image FROM contact WHERE id = ? LIMIT 1");
-        $stmt->bind_param("i", $contact_id);
-        $stmt->execute();
-        $stmt->bind_result($imageName);
-        $stmt->fetch();
-        $stmt->close();
-
-        // Step 2: Delete the file if the name is non-empty and file exists
-        if (!empty($imageName)) {
-            $filePath = __DIR__ . '/uploads/' . $imageName;
-            if (file_exists($filePath)) {
-                if (!unlink($filePath)) {
-                    $message = "Warning: Could not delete image file from server. ";
-                }
-            }
-        }
-
-        // Step 3: Delete the DB row
-        $stmt = $conn->prepare("DELETE FROM contact WHERE id = ? LIMIT 1");
+        // Delete row by id
+        $stmt = $conn->prepare("DELETE FROM contact WHERE Id = ? LIMIT 1");
         $stmt->bind_param("i", $contact_id);
         if ($stmt->execute()) {
-            $message .= "Message and image deleted successfully.";
+            $message = "Message deleted successfully.";
             $contact = null; // Clear displayed data after deletion
         } else {
-            $message .= "Failed to delete record from database.";
+            $message = "Failed to delete record from database.";
         }
         $stmt->close();
 
-    // --- UPDATE OPERATION ---
+
+
+        // --- UPDATE OPERATION ---
     } elseif (isset($_POST['update']) && isset($_POST['contact_id']) && isset($_POST['new_message'])) {
         $contact_id = intval($_POST['contact_id']);
         $new_message = trim($_POST['new_message']);
@@ -65,8 +49,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $message = "Failed to update message.";
             $stmt->close();
         }
-    
-    // --- SEARCH OPERATION ---
+
+        // --- SEARCH OPERATION ---
     } elseif (isset($_POST['search']) && isset($_POST['search_email'])) {
         $search_email = trim($_POST['search_email']);
         if (filter_var($search_email, FILTER_VALIDATE_EMAIL)) {
@@ -89,65 +73,74 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>View & Manage Your Message</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script>
-        function confirmDelete() { return confirm("Are you sure you want to delete this message and image?"); }
-        function showUpdateForm() { document.getElementById('messageDisplay').style.display = 'none'; document.getElementById('updateForm').style.display = 'block'; }
-        function cancelUpdate() { document.getElementById('updateForm').style.display = 'none'; document.getElementById('messageDisplay').style.display = 'block'; }
+        function confirmDelete() {
+            return confirm("Are you sure you want to delete this message?");
+        }
+
+        function showUpdateForm() {
+            document.getElementById('messageDisplay').style.display = 'none';
+            document.getElementById('updateForm').style.display = 'block';
+        }
+
+        function cancelUpdate() {
+            document.getElementById('updateForm').style.display = 'none';
+            document.getElementById('messageDisplay').style.display = 'block';
+        }
     </script>
 </head>
+
 <body class="bg-light">
-<div class="container mt-5">
-    <h2 class="mb-4 text-center text-primary">Search Your Message</h2>
-    <?php if ($message): ?>
-        <div class="alert alert-info text-center"><?php echo htmlspecialchars($message); ?></div>
-    <?php endif; ?>
+    <div class="container mt-5">
+        <h2 class="mb-4 text-center text-primary">Search Your Message</h2>
+        <?php if ($message): ?>
+            <div class="alert alert-info text-center"><?php echo htmlspecialchars($message); ?></div>
+        <?php endif; ?>
 
-    <?php if (!$contact): ?>
-        <form method="POST" class="mb-5">
-            <div class="mb-3">
-                <label for="search_email" class="form-label">Enter your Email</label>
-                <input type="email" class="form-control" id="search_email" name="search_email" required>
-            </div>
-            <div class="text-center">
-                <button type="submit" name="search" class="btn btn-primary">Search Message</button>
-            </div>
-        </form>
-    <?php endif; ?>
+        <?php if (!$contact): ?>
+            <form method="POST" class="mb-5">
+                <div class="mb-3">
+                    <label for="search_email" class="form-label">Enter your Email</label>
+                    <input type="email" class="form-control" id="search_email" name="search_email" required>
+                </div>
+                <div class="text-center">
+                    <button type="submit" name="search" class="btn btn-primary">Search Message</button>
+                </div>
+            </form>
+        <?php endif; ?>
 
-    <?php if ($contact): ?>
-        <div id="messageDisplay" class="card shadow-sm mb-4">
-            <div class="card-body">
-                <h5 class="card-title"><?php echo htmlspecialchars($contact['name']); ?></h5>
-                <p><strong>Email:</strong> <?php echo htmlspecialchars($contact['email']); ?></p>
-                <p><strong>Message:</strong> <?php echo nl2br(htmlspecialchars($contact['message'])); ?></p>
-                <?php if (!empty($contact['image'])): ?>
-                    <p><strong>Image:</strong><br>
-                    <img src="uploads/<?php echo htmlspecialchars($contact['image']); ?>" style="max-width: 200px; max-height: 200px;" alt="Uploaded Image"></p>
-                <?php endif; ?>
-                <button class="btn btn-warning me-2" onclick="showUpdateForm()">Update</button>
-                <form method="POST" class="d-inline" onsubmit="return confirmDelete();">
-                    <input type="hidden" name="contact_id" value="<?php echo (int)$contact['id']; ?>">
-                    <button type="submit" name="delete" class="btn btn-danger">Delete</button>
+        <?php if ($contact): ?>
+            <div id="messageDisplay" class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h5 class="card-title"><?php echo htmlspecialchars($contact['name']); ?></h5>
+                    <p><strong>Email:</strong> <?php echo htmlspecialchars($contact['email']); ?></p>
+                    <p><strong>Message:</strong> <?php echo nl2br(htmlspecialchars($contact['message'])); ?></p>
+                    <button class="btn btn-warning me-2" onclick="showUpdateForm()">Update</button>
+                    <form method="POST" class="d-inline" onsubmit="return confirmDelete();">
+                        <input type="hidden" name="contact_id" value="<?php echo (int)$contact['Id']; ?>">
+                        <button type="submit" name="delete" class="btn btn-danger">Delete</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Update Form (hidden by default) -->
+            <div id="updateForm" style="display:none;" class="card shadow-sm p-4">
+                <form method="POST">
+                    <h5>Update Your Message</h5>
+                    <div class="mb-3">
+                        <textarea name="new_message" rows="5" class="form-control" required><?php echo htmlspecialchars($contact['message']); ?></textarea>
+                    </div>
+                    <input type="hidden" name="contact_id" value="<?php echo (int)$contact['Id']; ?>">
+                    <button type="submit" name="update" class="btn btn-success me-2">Save Changes</button>
+                    <button type="button" class="btn btn-secondary" onclick="cancelUpdate()">Cancel</button>
                 </form>
             </div>
-        </div>
-
-        <!-- Update Form (hidden by default) -->
-        <div id="updateForm" style="display:none;" class="card shadow-sm p-4">
-            <form method="POST">
-                <h5>Update Your Message</h5>
-                <div class="mb-3">
-                    <textarea name="new_message" rows="5" class="form-control" required><?php echo htmlspecialchars($contact['message']); ?></textarea>
-                </div>
-                <input type="hidden" name="contact_id" value="<?php echo (int)$contact['id']; ?>">
-                <button type="submit" name="update" class="btn btn-success me-2">Save Changes</button>
-                <button type="button" class="btn btn-secondary" onclick="cancelUpdate()">Cancel</button>
-            </form>
-        </div>
-    <?php endif; ?>
-</div>
+        <?php endif; ?>
+    </div>
 </body>
+
 </html>
