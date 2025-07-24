@@ -40,7 +40,7 @@
             <h6>Welcome to our school</h6>
             <h2>A school where <em>learning</em> comes first.</h2>
             <div class="main-button-gradient">
-              <div class="scroll-to-section"><a href="#contact-section">Join Us Now!</a></div>
+              <div><a href="contact.php">Join Us Now!</a></div>
             </div>
           </div>
         </div>
