@@ -77,6 +77,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <title>View & Manage Your Message</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-eduwell-style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script>
         function confirmDelete() {
             return confirm("Are you sure you want to delete this message?");
@@ -95,6 +102,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body class="bg-light">
+    <?php include 'include/header.php' ?>
+    <br><br><br><br><br>
     <div class="container mt-5">
         <h2 class="mb-4 text-center text-primary">Search Your Message</h2>
         <?php if ($message): ?>
@@ -141,6 +150,48 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         <?php endif; ?>
     </div>
+    <footer class="site-footer">
+    <div class="footer-container">
+      <div class="col-lg-12 social-icons-wrapper">
+        <ul class="social-icons">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa fa-rss"></i></a></li>
+          <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+        </ul>
+      </div>
+      <!-- About -->
+      <div class="footer-box">
+        <h3>Cambridge International School</h3>
+        <p>Empowering students with knowledge, discipline, and values since 1995.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-box">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.php #top">Home</a></li>
+          <li><a href="about-us.php">About Us</a></li>
+          <li><a href="index.php #testimonials">Testimonials</a></li>
+          <li><a href="Gallery.php">Gallery</a></li>
+          <li><a href="contact.php">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-box">
+        <h4>Contact Us</h4>
+        <p><strong>Address:</strong> Shahpur Bus Stand, Talheri Buzurg, Saharanpur</p>
+        <p><strong>Phone:</strong> +91 9876543210</p>
+        <p><strong>Email:</strong> info@cambridgeschool.com</p>
+      </div>
+
+    </div>
+
+    <hr>
+    <p class="footer-bottom">&copy; 2025 Cambridge International School. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>
