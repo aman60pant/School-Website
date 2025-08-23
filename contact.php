@@ -17,7 +17,6 @@
 </head>
 
 <body>
-  <!-- ***** Header Area Start ***** -->
   <?php
   include 'include/header.php'
   ?>
