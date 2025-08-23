@@ -36,7 +36,6 @@
     </div>
   </section>
 
-  
   <section class="more-info">
     <div class="container">
       <div class="row">
