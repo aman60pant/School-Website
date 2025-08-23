@@ -30,7 +30,6 @@
           <div class="header-text">
             <h4>Say Hello!</h4>
             <h1>Contact Us</h1>
-            
           </div>
         </div>
       </div>
