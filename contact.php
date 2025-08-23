@@ -22,7 +22,7 @@
   include 'include/header.php'
   ?>
   <!-- ***** Header Area End ***** -->
-   
+  
   <section class="page-heading">
     <div class="container">
       <div class="row">
