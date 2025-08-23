@@ -31,7 +31,4 @@ if (isset($_SESSION['user_id']) && $_SERVER["REQUEST_METHOD"] == "POST") {
     alert('User not logged in or invalid request. Please login first.');
     window.location='login_form.php';
     </script>";
-    
 }
-
-?>
