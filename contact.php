@@ -141,6 +141,7 @@
     $(window).scroll(function() {
       checkSection();
     });
+    
   </script>
 
 </body>
